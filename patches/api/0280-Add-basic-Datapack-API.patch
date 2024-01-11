@@ -70,7 +70,7 @@ index 0000000000000000000000000000000000000000..58f78d5e91beacaf710f62461cf869f7
 +
 +}
 diff --git a/src/main/java/org/bukkit/Bukkit.java b/src/main/java/org/bukkit/Bukkit.java
-index 4b3c91575f2609ad1b1177384f6f21151a535054..6ac4c0c6c2245e6bee9575ff4804994648112d78 100644
+index 3cf33c3072d67b01db79b8794f660ebbe20f216d..b4405c9398c2ee405d180117a85107f67caf604a 100644
 --- a/src/main/java/org/bukkit/Bukkit.java
 +++ b/src/main/java/org/bukkit/Bukkit.java
 @@ -328,9 +328,11 @@ public final class Bukkit {
@@ -85,7 +85,7 @@ index 4b3c91575f2609ad1b1177384f6f21151a535054..6ac4c0c6c2245e6bee9575ff48049946
      public static DataPackManager getDataPackManager() {
          return server.getDataPackManager();
      }
-@@ -2562,6 +2564,14 @@ public final class Bukkit {
+@@ -2565,6 +2567,14 @@ public final class Bukkit {
      public static com.destroystokyo.paper.entity.ai.MobGoals getMobGoals() {
          return server.getMobGoals();
      }
@@ -101,7 +101,7 @@ index 4b3c91575f2609ad1b1177384f6f21151a535054..6ac4c0c6c2245e6bee9575ff48049946
  
      @NotNull
 diff --git a/src/main/java/org/bukkit/Server.java b/src/main/java/org/bukkit/Server.java
-index 5bb94245c33105e57131b3d0867ef707c4aed79c..052d0e420f2631ff925bb5df4a41a1cecc2d7e16 100644
+index 07bb145e19f9f9df36375f23e198b67f8edf2174..77d9c117dbf4915d4da94ed31abb37865d9c6b0c 100644
 --- a/src/main/java/org/bukkit/Server.java
 +++ b/src/main/java/org/bukkit/Server.java
 @@ -264,9 +264,11 @@ public interface Server extends PluginMessageRecipient, net.kyori.adventure.audi
@@ -116,7 +116,7 @@ index 5bb94245c33105e57131b3d0867ef707c4aed79c..052d0e420f2631ff925bb5df4a41a1ce
      public DataPackManager getDataPackManager();
  
      /**
-@@ -2232,5 +2234,11 @@ public interface Server extends PluginMessageRecipient, net.kyori.adventure.audi
+@@ -2235,5 +2237,11 @@ public interface Server extends PluginMessageRecipient, net.kyori.adventure.audi
       */
      @NotNull
      com.destroystokyo.paper.entity.ai.MobGoals getMobGoals();
